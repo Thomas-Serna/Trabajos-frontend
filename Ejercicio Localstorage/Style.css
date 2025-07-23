@@ -1,0 +1,126 @@
+
+  :root {
+    --primary-color: #4f46e5;
+    --light-gray: #f9fafb;
+    --dark-gray: #374151;
+    --border-color: #e5e7eb;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  form input {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+  }
+
+  form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  form button:hover {
+    background-color: #4338ca;
+  }
+
+  input[type="text"], input[type="number"] {
+    font-size: 14px;
+  }
+
+  #search {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  th {
+    background-color: #f3f4f6;
+    font-weight: 600;
+  }
+
+  td button {
+    margin-right: 5px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  td button:hover {
+    opacity: 0.85;
+  }
+
+  button[onclick^="startEdit"] {
+    background-color: #3b82f6;
+    color: white;
+  }
+
+  button[onclick^="deleteProduct"] {
+    background-color: #ef4444;
+    color: white;
+  }
+
+  button[onclick="exportToPDF()"] {
+    background-color: #10b981;
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .edit-row input {
+    width: 100%;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+  }
